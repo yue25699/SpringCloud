@@ -1,0 +1,17 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: cloud-eureka-server7002
+
+eureka:
+  instance:
+    hostname: www.eureka7002.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://www.eureka7001.com:7001/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000

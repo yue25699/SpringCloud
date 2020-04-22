@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka7001.com:7001/eureka/
+spring:
+  application:
+    name: cloud-comsumer-order
+
+
+feign:
+  hystrix:
+    enabled: true  #在feign中开启hystrix

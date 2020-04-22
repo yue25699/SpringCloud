@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://www.eureka7001.com:7001/eureka/,http://www.eureka7002.com:7002/eureka/
+      defaultZone: http://www.eureka7001.com:7001/eureka/
+  instance:
+    ip-address: 127.0.0.1
+    instance-id: payment8001
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+spring:
+  application:
+    name: cloud-provider-payment
